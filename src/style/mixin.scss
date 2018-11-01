@@ -1,0 +1,24 @@
+$color-primary:rgb(215,196,187);
+
+//文字靠左不换行省略号
+@mixin pell {
+    overflow: hidden;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+//字体大小，颜色
+@mixin fsc($size, $color){
+	font-size: $size;
+	color: $color;
+}
+
+@mixin flexb{
+    display: flex;
+    justify-content:space-between;
+}
+
+@mixin wh($width,$height){
+    width:$width;
+    height:$height;
+}
